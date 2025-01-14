@@ -80,6 +80,7 @@ main {
     align-items: center;
 }
 
+/* index page */
 .mainIndex {
     display: flex;
     flex-wrap:nowrap;
@@ -271,10 +272,60 @@ button:hover {
 /* oferts page */
 
 .ofertsMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    grid-template-areas: 
+      "none tittle tittle none"  
+      "none monday tuesday none"  
+      "none wednesday thursday none" 
+      "none friday saturday none"  
+      "none sunday sunday none";
+ }
+ 
+ .ofertsMainTittle {
+     grid-area: tittle; /* Título */
+ }
+ 
+ .monday {
+     grid-area: monday; /* Lunes */
+ }
+ 
+ .tuesday {
+     grid-area: tuesday; /* Martes */
+ }
+ 
+ .wednesday {
+     grid-area: wednesday; /* Miércoles */
+ }
+ 
+ .thursday {
+     grid-area: thursday; /* Jueves */
+ }
+ 
+ .friday {
+     grid-area: friday; /* Viernes */
+ }
+ 
+ .saturday {
+     grid-area: saturday; /* Sábado */
+ }
+ 
+ .sunday {
+     grid-area: sunday; /* No asignado en la cuadrícula */
+ }
+ 
+
+/* About us page */
+
+.contactMain p {
+    width: 70%;
+}
+
+
+.btn {
+    background-color: #323137;
+    color: #dfa10c;
 }
 
 /* Footer */
@@ -397,6 +448,28 @@ footer p {
     .mainIndex {
        margin-bottom: 0%;
     }
+    /* products page */
+    .productsCard{
+        width: 90%;
+        height: 350px;
+    }
+
+    .productsCard img {
+        width: 37%;
+    }
+    .productsCard p {
+        font-size: 40%;
+    }
+    .price p {
+        font-size: 80%;
+    }
+
+    button {
+        width: 60px;
+        height: 30px;
+        font-size: .7rem;
+    }
+
 
     /* footer */
 
