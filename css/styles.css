@@ -64,6 +64,7 @@ a {
     background-color:#dfa10c;
     width: 70%;
     height: 15vh;
+    z-index: -1;
     
 }
 main {
@@ -273,46 +274,84 @@ button:hover {
 
 .ofertsMain {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(5, 1fr); 
     grid-template-areas: 
-      "none tittle tittle none"  
-      "none monday tuesday none"  
-      "none wednesday thursday none" 
-      "none friday saturday none"  
-      "none sunday sunday none";
- }
+        "tittle tittle tittle tittle"
+        "monday monday tuesday tuesday"
+        "wednesday wednesday thursday thursday"
+        "friday friday saturday saturday"
+        "sunday sunday sunday sunday";
+        justify-items: center;
+    grid-template-columns: repeat(4, 1.0fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 5%;
+    height: auto;
+}
  
  .ofertsMainTittle {
-     grid-area: tittle; /* Título */
+     grid-area: tittle;
  }
  
- .monday {
-     grid-area: monday; /* Lunes */
+ section h3 {
+    text-decoration: underline;
+ }
+ section p {
+    text-align: center;
+    font-weight: 700;
+    width: 70%;
+ }
+ .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88932a;
+    width: 40%;
+    height: 300px;
+    border-radius: 30px;
+    gap: 20px;
+    grid-area: monday;
+    box-shadow: 10px 10px 20px #323137;
+ }
+ .offertImg {
+    width: 60%;
  }
  
  .tuesday {
-     grid-area: tuesday; /* Martes */
+     grid-area: tuesday; 
  }
+
+
  
  .wednesday {
-     grid-area: wednesday; /* Miércoles */
+     grid-area: wednesday; 
  }
  
  .thursday {
-     grid-area: thursday; /* Jueves */
+     grid-area: thursday;
  }
  
  .friday {
-     grid-area: friday; /* Viernes */
+     grid-area: friday; 
  }
- 
+
  .saturday {
-     grid-area: saturday; /* Sábado */
+     grid-area: saturday;    
  }
+
  
  .sunday {
-     grid-area: sunday; /* No asignado en la cuadrícula */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88932a;
+    width: 20%;
+    height: 300px;
+    border-radius: 30px;
+    gap: 10%;
+    box-shadow: 10px 10px 20px #323137;
+    grid-area: sunday; 
+ }
+ .sunday img {
+    width: 50%;
  }
  
 
