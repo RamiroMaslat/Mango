@@ -1,0 +1,776 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #88932a;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+}
+
+h1 {
+  letter-spacing: 20px;
+  margin-left: 3%;
+  font-size: 40px;
+  font-weight: 900;
+  color: #323137;
+}
+
+nav {
+  width: 40%;
+  margin-right: 3%;
+}
+
+li {
+  display: inline;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+li:hover {
+  background-color: #dfa10c;
+  border-radius: 10px;
+  padding: 1%;
+  transition: 0.4s;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #323137;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav li {
+    font-size: 80%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav li {
+    font-size: 80%;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  nav {
+    width: 100%;
+    margin-right: 2%;
+  }
+  nav ul {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  nav li {
+    font-size: 15px;
+  }
+}
+.decoration {
+  background-color: #dfa10c;
+  width: 70%;
+  height: 15vh;
+  z-index: -1;
+}
+
+main {
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.indexBody {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");
+  align-items: center;
+}
+
+.productBody {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");
+  align-items: center;
+}
+
+.ofertsBoody {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");
+  align-items: center;
+}
+
+.aboutUsBody {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");
+  align-items: center;
+}
+
+.contactbody {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");
+  align-items: center;
+}
+
+.mainIndex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.indexProducts {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfa10c;
+  gap: 50px;
+}
+
+.mainIndexProduct {
+  padding: 5%;
+}
+
+.mainIndex h2 {
+  background-color: #dfa10c;
+  width: 100%;
+  text-align: center;
+  padding-top: 4%;
+}
+
+.product, .productRow {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 2%;
+}
+
+.productRow {
+  flex-direction: row-reverse;
+}
+
+.product a img, .productRow a img {
+  width: 70%;
+  border-radius: 10px;
+  border: black 1px solid;
+  box-shadow: 10px 5px 20px #323137;
+}
+
+.product p {
+  width: 40%;
+  font-size: 80%;
+}
+
+.productRow p {
+  width: 40%;
+  font-size: 80%;
+}
+
+.indexClients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dfa10c;
+  width: 100%;
+}
+
+.client {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #88932a;
+  width: 300px;
+  border-radius: 40px;
+  height: 350px;
+  align-items: center;
+  margin: 2%;
+  transition: 0.3s;
+}
+
+.client:hover {
+  width: 305px;
+  height: 355 px;
+  transition: 0.3s;
+  box-shadow: 10px 10px 20px #323137;
+}
+
+.client h3 {
+  margin-top: 20px;
+}
+
+.client p {
+  font-size: 60%;
+  width: 70%;
+}
+
+.client img {
+  width: 13%;
+}
+
+.clientCalification {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  .product p {
+    width: 100%;
+    font-size: 27%;
+  }
+  .productRow p {
+    width: 100%;
+    font-size: 27%;
+  }
+  .client {
+    width: 150px;
+    height: 200px;
+  }
+  .client h3 {
+    font-size: 70%;
+  }
+  .client p {
+    font-size: 30%;
+    font-weight: 350;
+  }
+  .mainIndex {
+    margin-bottom: 0%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .productRow p {
+    width: 100%;
+    font-size: 40%;
+  }
+  .product p {
+    width: 100%;
+    font-size: 40%;
+  }
+  .productRow {
+    margin-left: 5%;
+    font-size: 30%;
+  }
+  .client {
+    width: 150px;
+    height: 200px;
+  }
+  .client h3 {
+    font-size: 70%;
+  }
+  .client p {
+    font-size: 30%;
+    font-weight: 350;
+  }
+}
+.mainProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainProductsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dfa10c;
+  width: 70%;
+}
+
+.productCardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.mainProductsContainer h2 {
+  margin-bottom: 4%;
+}
+
+.productsCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #88932a;
+  border-radius: 40px;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.productsCard:hover {
+  width: 305px;
+  height: 355 px;
+  transition: 0.3s;
+  box-shadow: 10px 10px 20px #323137;
+}
+
+.productsCard img {
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.productsCard p {
+  font-size: 60%;
+  width: 85%;
+}
+
+.price p {
+  width: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+button {
+  margin-bottom: 3%;
+  border: 1px solid;
+  border-radius: 7px;
+  background-color: #dfa10c;
+  color: #323137;
+  font-weight: 600;
+  width: 80px;
+  height: 40px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #323137;
+  color: #dfa10c;
+}
+
+@media screen and (max-width: 480px) {
+  .productsCard {
+    width: 90%;
+    height: 350px;
+  }
+  .productsCard img {
+    width: 37%;
+  }
+  .productsCard p {
+    font-size: 40%;
+  }
+  .price p {
+    font-size: 80%;
+  }
+  button {
+    width: 60px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+}
+.ofertsMain {
+  background-color: #dfa10c;
+  width: 70%;
+  display: grid;
+  grid-template-areas: "tittle tittle tittle tittle" "monday monday tuesday tuesday" "wednesday wednesday thursday thursday" "friday friday saturday saturday" "sunday sunday sunday sunday";
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5%;
+  height: auto;
+}
+
+.ofertsMainTittle {
+  grid-area: tittle;
+}
+
+section h3 {
+  text-decoration: underline;
+}
+
+section p {
+  text-align: center;
+  font-weight: 700;
+  width: 70%;
+}
+
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #88932a;
+  width: 40%;
+  height: 300px;
+  border-radius: 30px;
+  gap: 20px;
+  grid-area: monday;
+  box-shadow: 10px 10px 20px #323137;
+}
+
+.offertImg {
+  width: 60%;
+}
+
+.tuesday {
+  grid-area: tuesday;
+}
+
+.wednesday {
+  grid-area: wednesday;
+}
+
+.thursday {
+  grid-area: thursday;
+}
+
+.friday {
+  grid-area: friday;
+}
+
+.saturday {
+  grid-area: saturday;
+}
+
+.sunday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #88932a;
+  width: 20%;
+  height: 300px;
+  border-radius: 30px;
+  gap: 10%;
+  box-shadow: 10px 10px 20px #323137;
+  grid-area: sunday;
+}
+
+.sunday img {
+  width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .ofertsMain {
+    grid-template-areas: "tittle" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday" "sunday";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 0.1fr);
+    height: 270vh;
+  }
+  section p {
+    font-size: 0.8rem;
+  }
+  .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    background-color: #88932a;
+    width: 70%;
+    height: 200px;
+    border-radius: 30px;
+    gap: 5px;
+    grid-area: monday;
+    box-shadow: 10px 10px 20px #323137;
+  }
+  .monday {
+    grid-area: monday;
+  }
+  .tuesday {
+    grid-area: tuesday;
+  }
+  .wednesday {
+    grid-area: wednesday;
+  }
+  .thursday {
+    grid-area: thursday;
+  }
+  .friday {
+    grid-area: friday;
+  }
+  .saturday {
+    grid-area: saturday;
+  }
+  .sunday {
+    grid-area: sunday;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88932a;
+    width: 70%;
+    height: 200px;
+    border-radius: 30px;
+    gap: 3%;
+    box-shadow: 10px 10px 20px #323137;
+  }
+  .sunday img {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .ofertsMain {
+    grid-template-areas: "tittle" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday" "sunday";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 0.1fr);
+    height: 320vh;
+  }
+  section p {
+    font-size: 0.8rem;
+  }
+  .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    background-color: #88932a;
+    width: 70%;
+    height: 250px;
+    border-radius: 30px;
+    gap: 5px;
+    grid-area: monday;
+    box-shadow: 10px 10px 20px #323137;
+  }
+  .monday {
+    grid-area: monday;
+  }
+  .tuesday {
+    grid-area: tuesday;
+  }
+  .wednesday {
+    grid-area: wednesday;
+  }
+  .thursday {
+    grid-area: thursday;
+  }
+  .friday {
+    grid-area: friday;
+  }
+  .saturday {
+    grid-area: saturday;
+  }
+  .sunday {
+    grid-area: sunday;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88932a;
+    width: 70%;
+    height: 200px;
+    border-radius: 30px;
+    gap: 3%;
+  }
+  .sunday img {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    width: 80%;
+  }
+  .sunday {
+    width: 40%;
+    border-radius: 30px;
+    gap: 3%;
+  }
+}
+.aboutUsMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dfa10c;
+  width: 70%;
+  gap: 30px;
+}
+
+.aboutUsMain h2 {
+  text-decoration: underline;
+}
+
+.aboutUsMain p {
+  font-weight: 500;
+  width: 90%;
+}
+
+.aboutUsMain img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.aboutUsMain iframe {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.contactMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dfa10c;
+  width: 70%;
+}
+
+.contactMain p {
+  width: 70%;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #323137;
+  color: #dfa10c;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #88932a;
+  color: #323137;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  background-color: #323137;
+  position: fixed;
+  bottom: 0;
+  height: 8%;
+}
+
+.footerPayments {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.creditPayment, .debitPayment, .mpPayment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13%;
+}
+
+.debitPayment p, .creditPayment p {
+  font-size: 80%;
+}
+
+.creditPayment img {
+  width: 65%;
+}
+
+.debitPayment img {
+  width: 70%;
+}
+
+.mpPayment img {
+  width: 95%;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  width: 41%;
+}
+
+.footerSocial {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.footerSocial a {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.footerSocial img {
+  width: 50%;
+}
+
+footer p {
+  color: white;
+  font-size: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .creditPayment, .debitPayment, .mpPayment {
+    width: 33%;
+  }
+  .creditPayment, .debitPayment, .mpPayment {
+    font-size: 40%;
+  }
+  .copyright {
+    font-size: 40%;
+  }
+  .footerSocial a {
+    width: 28%;
+  }
+  .footerSocial img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .creditPayment, .debitPayment, .mpPayment {
+    width: 33%;
+  }
+  .creditPayment, .debitPayment, .mpPayment {
+    font-size: 40%;
+  }
+  .copyright {
+    font-size: 40%;
+  }
+  .footerSocial a {
+    width: 28%;
+  }
+  .footerSocial img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .creditPayment, .debitPayment, .mpPayment {
+    width: 25%;
+  }
+  .creditPayment, .debitPayment, .mpPayment {
+    font-size: 70%;
+  }
+  .copyright {
+    font-size: 60%;
+  }
+  .footerSocial a {
+    width: 28%;
+  }
+  .footerSocial img {
+    width: 55%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

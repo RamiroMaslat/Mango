@@ -1,0 +1,128 @@
+footer {
+    display: flex;    
+    background-color: #323137;
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    
+}
+
+.footerPayments {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;    
+}
+
+.creditPayment, .debitPayment, .mpPayment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13%;
+}
+
+.debitPayment p, .creditPayment p {
+    font-size: 80%;
+}
+
+.creditPayment img {
+    width: 65%;
+    
+}
+
+.debitPayment img {
+    width: 70%;
+   
+}
+
+.mpPayment img {
+    width: 95%;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    width: 41%;  
+    
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.footerSocial a {
+   display: flex;
+   justify-content: space-evenly;
+   width: 20%;
+}
+
+.footerSocial img {
+    width: 50%;    
+}
+
+footer p {
+    color: white; 
+    font-size: 80%;   
+}
+
+@media screen and (max-width: 480px) {
+    .creditPayment, .debitPayment, .mpPayment  {
+        width: 33%;
+     }
+     .creditPayment, .debitPayment, .mpPayment {
+         font-size: 40%;
+     }
+     .copyright {
+         font-size: 40%;
+     }
+ 
+     .footerSocial a {
+         width: 28%;
+     }
+     .footerSocial img {
+         width: 70%;    
+     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .creditPayment, .debitPayment, .mpPayment  {
+        width: 33%;
+     }
+     .creditPayment, .debitPayment, .mpPayment {
+         font-size: 40%;
+     }
+     .copyright {
+         font-size: 40%;
+     }
+ 
+     .footerSocial a {
+         width: 28%;
+     }
+     .footerSocial img {
+         width: 70%;    
+     }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    .creditPayment, .debitPayment, .mpPayment  {
+        width: 25%;
+     }
+     .creditPayment, .debitPayment, .mpPayment {
+         font-size: 70%;
+     }
+     .copyright {
+         font-size: 60%;
+     }
+ 
+     .footerSocial a {
+         width: 28%;
+     }
+     .footerSocial img {
+         width: 55%;    
+     }
+}

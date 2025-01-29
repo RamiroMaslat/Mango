@@ -1,0 +1,27 @@
+.contactMain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #dfa10c;
+    width: 70%;
+    
+}
+
+.contactMain p {
+    width: 70%;
+    font-weight: 500;
+}
+
+
+.btn {
+    background-color: #323137;
+    color: #dfa10c;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #88932a;
+    color: #323137;
+    font-weight: 700;
+    border: 1px solid black;
+}

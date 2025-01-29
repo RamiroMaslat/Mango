@@ -1,0 +1,43 @@
+.decoration {
+    background-color:#dfa10c;
+    width: 70%;
+    height: 15vh;
+    z-index: -1;
+    
+}
+main {
+    
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+.indexBody {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");   
+    align-items: center;
+}
+.productBody {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");   
+    align-items: center;}
+
+.ofertsBoody {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");   
+    align-items: center;}
+
+.aboutUsBody {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");   
+    align-items: center;}
+
+.contactbody {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://st2.depositphotos.com/3283585/8824/v/450/depositphotos_88243388-stock-illustration-pattern-with-jeans-wear-for.jpg");   
+    align-items: center;}

@@ -1,0 +1,26 @@
+.aboutUsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #dfa10c;
+    width: 70%;
+    gap: 30px ;
+}
+
+.aboutUsMain h2 {
+    text-decoration: underline;
+}
+.aboutUsMain p {
+    font-weight: 500;
+    width: 90%;
+}
+.aboutUsMain img {
+    width: 50%;
+    border-radius: 20px;
+}
+.aboutUsMain iframe {
+    width: 90%;
+    border-radius: 20px;
+}
