@@ -166,3 +166,33 @@
         font-weight: 350;
     }
 }
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    .productRow p {
+        width: 100%;
+        font-size: 40%;
+        margin-right: 3%;
+    }
+    .product p{
+        width: 100%;
+        font-size: 40%;
+        margin-right: 3%;
+    }
+
+    .productRow {
+        margin-left: 5%;
+        font-size: 30%;
+    }
+
+    .client  {
+        width: 250px;
+        height: 300px;
+    }
+    .client h3 {
+        font-size: 80%
+    }
+    .client p {
+        font-size: 60%;
+        font-weight: 350;
+    }
+}
