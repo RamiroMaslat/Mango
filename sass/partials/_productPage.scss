@@ -25,13 +25,13 @@
 }
 .productsCard {    
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: #88932a;
     border-radius: 40px;    
     align-items: center;
     width: 300px;
-    height: auto;
+    height: 400px;
     transition: 0.3s;
    
     
